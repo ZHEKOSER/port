@@ -1,0 +1,46 @@
+* {
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+body {
+    max-width: $desktop;
+    margin: 0 auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: $small-desktop;
+    margin: 0 auto;
+}
+
+@media (max-width: $small-desktop) {
+    .container {
+        width: 96%;
+    }
+}
+
+@media (max-width: $mobile) {
+    .container {
+        width: 92%;
+    }
+}

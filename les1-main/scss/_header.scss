@@ -1,0 +1,112 @@
+.header {
+    background-color: $dark-blue;
+    position: relative;
+
+    &__wraper {
+        display: flex;
+        justify-content: space-between;
+        min-height: 75px;
+        align-items: center;
+    }
+
+    &__logo {
+        height: 38px;
+        width: 44px;
+    }
+
+    &__search {
+        padding-left: 41px;
+        height: 26px;
+        width: 26px;
+    }
+
+    &__button {
+        background-color: transparent;
+        border: none;
+    }
+
+    &__link {
+        padding-left: 33px;
+        height: 29px;
+        width: 30px;
+
+        @media (max-width: $mobile) {
+            display: none;
+        }
+    }
+
+    &__button__icon,
+    &__link__icon {
+        fill: $white;
+    }
+
+    &__button:hover &__button__icon,
+    &__button:focus &__button__icon,
+    &__link:hover &__link__icon,
+    &__link:focus &__link__icon {
+        fill: $red-solid;
+    }
+
+    &__menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        z-index: 1;
+        background-color: $white;
+        width: 230px;
+        min-height: 764px;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+
+        @media (max-width: $tablet) {
+            min-height: 620px;
+        }
+
+        &__close {
+            margin: 16px 17px 0 auto;
+            width: 12px;
+            height: 12px;
+        }
+
+        &__title {
+            margin: 9px auto 24px 33px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 17px;
+            color: $black;
+        }
+
+        &__list {
+            margin-left: 33px;
+        }
+
+        &__item {
+            margin-bottom: 20px;
+        }
+
+        &__item__link {
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            color: $red-solid;
+            text-transform: uppercase;
+        }
+
+        &__item__sub-list {
+            padding-left: 22px;
+        }
+
+        &__item__sub-item {
+            padding-top: 12px;
+        }
+
+        &__item__sub-item-link {
+            font-size: 14px;
+            line-height: 17px;
+            color: $grey;
+        }
+
+    }
+
+}

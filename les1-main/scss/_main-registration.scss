@@ -1,0 +1,186 @@
+.top-registration {
+    background-color: $pink;
+    min-height: 148px;
+
+    &__title {
+        padding: 60px 0 60px;
+        font-size: 24px;
+        line-height: 29px;
+        color: $red;
+        text-transform: uppercase;
+    }
+
+    @media (max-width: $tablet-mobile) {
+        text-align: center;
+    }
+}
+
+.registration {
+
+    &__list {
+        margin-bottom: 96px;
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: $tablet-mobile) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    //&__item-form,
+    .form {
+        margin-top: 64px;
+
+        @media (max-width: $tablet) {
+            margin-top: 40px;
+        }  
+
+        &__wraper {
+            width: 358px;
+            margin-right: 22px;
+
+            @media (max-width: $tablet-mobile) {
+                margin-right: 0;
+            }
+        }
+
+        &__block {
+            display: flex;
+            flex-direction: column;     
+        }
+
+        &__block-gender {
+            margin-top: 33px;
+            margin-bottom: 33px;
+            flex-direction: row;
+        }
+
+        .radio-label {
+            margin: 2px 20px 0px 10px;
+            font-weight: 300;
+            font-size: 11px;
+            line-height: 13px;
+            color: $black;
+        }
+
+        &__block__title {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            color: $dark-blue;
+        }
+
+        &__block__text {
+            margin-top: 21px;
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 16px;
+            color: $grey-text;
+            padding: 13px 0 15px 16px;
+            border: 1px solid $grey-text;
+        }
+
+        &__text {
+            padding-top: 16px;
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 16px;
+            color: $grey-text;
+        }
+
+        &__button {
+            margin-top: 40px;
+            padding: 16px 27px;
+            font-size: 14px;
+            line-height: 17px;
+            background-color: $white;
+            color: $red-solid;
+            border: 1px solid $red-solid;
+            text-transform: uppercase;
+        }
+
+        &__button:hover {
+            background-color: $red-solid;
+            color: $white;
+        }
+
+        &__button:hover .form__button__img {
+            fill: $white;
+        }
+
+        &__button__img {
+            fill: $red-solid;
+            margin-top: 3px;
+            padding-left: 20px;
+        }
+
+    }
+
+    //&__item-info,
+    .item-info {
+        margin-top: 64px;
+        min-width: 358px;
+
+        @media (max-width: $tablet) {
+            width: 358px;
+            margin-top: 40px;
+        }
+
+        &__title {
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+            color: $black;
+            text-transform: uppercase;
+
+            @media (max-width: $tablet) {
+                font-size: 16px;
+                line-height: 19px;
+            }
+        }
+
+        &__text {
+            padding-top: 22px;
+            padding-bottom: 22px;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+            color: $black;
+            max-width: 655px;
+
+            @media (max-width: $tablet) {
+                padding-top: 32px;
+                font-size: 16px;
+                line-height: 19px;
+            }
+        }
+
+        &__sublist {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__subitem {
+            display: flex;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+            color: $black;
+            padding-bottom: 16px;
+
+            @media (max-width: $tablet) {
+                padding-bottom: 20px;
+                font-size: 16px;
+                line-height: 19px;
+            }
+        }
+
+        &__subitem:before {
+            padding-right: 20px;
+            content: url('../img/registration/check.svg');
+        }
+
+    }
+
+}
